@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -39,6 +39,7 @@ namespace LoanCalculator.RazorPages.Pages
             LoanApplicationResults = _loanResultRepository.GetLoanApplicationResults().Take(5).ToList();
             LoanRates = _loanRateRepository.GetLoanRates();
 
+            // Hello World
 
             if (_env.IsDevelopment())
             {
